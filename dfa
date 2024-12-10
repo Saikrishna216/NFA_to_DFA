@@ -1,0 +1,25 @@
+digraph {
+	node [shape=circle]
+	ABC
+	node [shape=none]
+	""
+	"" -> ABC
+	ABC -> ABC [label=a]
+	node [shape=doublecircle]
+	BD
+	ABC -> BD [label=b]
+	node [shape=doublecircle]
+	CD
+	ABC -> CD [label=c]
+	node [shape=circle]
+	"ϕ"
+	"ϕ" -> "ϕ" [label=a]
+	"ϕ" -> "ϕ" [label=b]
+	"ϕ" -> "ϕ" [label=c]
+	BD -> "ϕ" [label=a]
+	BD -> BD [label=b]
+	BD -> "ϕ" [label=c]
+	CD -> "ϕ" [label=a]
+	CD -> "ϕ" [label=b]
+	CD -> CD [label=c]
+}

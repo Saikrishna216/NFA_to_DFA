@@ -1,0 +1,20 @@
+digraph {
+	node [shape=circle]
+	A
+	node [shape=circle]
+	B
+	node [shape=circle]
+	C
+	node [shape=doublecircle]
+	D
+	node [shape=none]
+	""
+	"" -> A
+	A -> A [label=a]
+	A -> B [label="ε"]
+	B -> B [label=b]
+	A -> C [label="ε"]
+	C -> C [label=c]
+	B -> D [label=b]
+	C -> D [label=c]
+}
